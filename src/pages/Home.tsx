@@ -31,7 +31,7 @@ const Home: React.FC = () => {
           className="space-y-6"
         >
           <motion.h1 variants={item} className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            Hi, I'm <span className="text-blue-600 dark:text-blue-400">{resumeData.personal.name}</span>
+            Hi, I'm <span className="text-primary-600 dark:text-primary-400">{resumeData.personal.name}</span>
           </motion.h1>
           <motion.h2 variants={item} className="text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-300">
             {resumeData.personal.title}
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
           <motion.div variants={item} className="flex flex-wrap gap-4 pt-4">
             <a 
               href={`mailto:${resumeData.personal.email}`}
-              className="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors"
+              className="px-6 py-3 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors"
             >
               Contact Me
             </a>
@@ -68,14 +68,14 @@ const Home: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center">
-            <Terminal className="w-6 h-6 mr-3 text-blue-500" />
+            <Terminal className="w-6 h-6 mr-3 text-primary-500" />
             Technical Arsenal
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-800">
               <h4 className="text-lg font-semibold mb-4 flex items-center text-gray-800 dark:text-gray-200">
-                <Code className="w-5 h-5 mr-2 text-indigo-500" />
+                <Code className="w-5 h-5 mr-2 text-primary-500" />
                 Languages & Systems
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
 
             <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-800">
               <h4 className="text-lg font-semibold mb-4 flex items-center text-gray-800 dark:text-gray-200">
-                <Server className="w-5 h-5 mr-2 text-indigo-500" />
+                <Server className="w-5 h-5 mr-2 text-primary-500" />
                 Frameworks & Cloud
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
 
             <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-800">
               <h4 className="text-lg font-semibold mb-4 flex items-center text-gray-800 dark:text-gray-200">
-                <Database className="w-5 h-5 mr-2 text-indigo-500" />
+                <Database className="w-5 h-5 mr-2 text-primary-500" />
                 Databases
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
 
              <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-800">
               <h4 className="text-lg font-semibold mb-4 flex items-center text-gray-800 dark:text-gray-200">
-                <Cpu className="w-5 h-5 mr-2 text-indigo-500" />
+                <Cpu className="w-5 h-5 mr-2 text-primary-500" />
                 Specializations
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -141,7 +141,7 @@ const Home: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center">
-            <ActivityIcon className="w-6 h-6 mr-3 text-blue-500" />
+            <ActivityIcon className="w-6 h-6 mr-3 text-primary-500" />
             Work History
           </h3>
           <Timeline />

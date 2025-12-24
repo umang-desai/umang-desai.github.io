@@ -28,26 +28,31 @@ const Coaching: React.FC = () => {
             transition={{ delay: index * 0.2 }}
             className="group relative bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-slate-800 transition-all duration-300"
           >
-            <div className="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity">
-              <ExternalLink className="w-6 h-6 text-blue-500" />
-            </div>
+            <a 
+              href={app.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity hover:scale-110"
+            >
+              <ExternalLink className="w-6 h-6 text-primary-500" />
+            </a>
             
-            <div className="mb-6 h-20 w-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 p-4 flex items-center justify-center">
-              {/* Light mode logo */}
+            <div className="mb-6 h-20 w-20 rounded-2xl bg-primary-50 dark:bg-primary-900/20 overflow-hidden flex items-center justify-center">
+              {/* Light mode logo - Soccer Fitness Tracker uses dark variant in light mode */}
               <img 
-                src={`/logos/${(app as any).logoBase}_light.svg`}
+                src={`/logos/${(app as any).logoBase}_${(app as any).logoBase === 'soccer_fitness_tracker' ? 'dark' : 'light'}.png`}
                 alt={`${app.name} logo`}
-                className="w-full h-full object-contain dark:hidden"
+                className="w-full h-full object-cover dark:hidden"
               />
-              {/* Dark mode logo */}
+              {/* Dark mode logo - Soccer Fitness Tracker uses light variant in dark mode */}
               <img 
-                src={`/logos/${(app as any).logoBase}_dark.svg`}
+                src={`/logos/${(app as any).logoBase}_${(app as any).logoBase === 'soccer_fitness_tracker' ? 'light' : 'dark'}.png`}
                 alt={`${app.name} logo`}
-                className="w-full h-full object-contain hidden dark:block"
+                className="w-full h-full object-cover hidden dark:block"
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
               {app.name}
             </h3>
             
@@ -59,7 +64,7 @@ const Coaching: React.FC = () => {
               href={app.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+              className="inline-flex items-center font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
             >
               View on App Store
               <ExternalLink className="w-4 h-4 ml-2" />
@@ -72,7 +77,7 @@ const Coaching: React.FC = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="bg-blue-50 dark:bg-slate-900/50 rounded-2xl p-8 md:p-12 text-center mt-12"
+        className="bg-primary-50 dark:bg-slate-800/50 rounded-2xl p-8 md:p-12 text-center mt-12 border border-primary-100 dark:border-slate-700"
       >
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
           Interested in training?
@@ -82,7 +87,7 @@ const Coaching: React.FC = () => {
         </p>
         <a 
           href={`mailto:${resumeData.personal.email}`}
-          className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors"
+          className="inline-flex items-center px-6 py-3 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors"
         >
           Get in Touch
         </a>

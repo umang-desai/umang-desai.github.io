@@ -5,7 +5,7 @@ import resumeData from '../data/resume.json';
 
 const Timeline: React.FC = () => {
   return (
-    <div className="relative border-l-2 border-blue-200 dark:border-blue-900 ml-6 md:ml-10 space-y-12 my-10">
+    <div className="relative border-l-2 border-primary-200 dark:border-primary-900 ml-6 md:ml-10 space-y-12 my-10">
       {resumeData.experience.map((job, index) => (
         <TimelineItem key={index} job={job} index={index} />
       ))}
@@ -34,21 +34,21 @@ const TimelineItem: React.FC<{ job: any; index: number }> = ({ job, index }) => 
             onError={() => setImageError(true)}
           />
         ) : (
-          <div className="w-full h-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-             <Briefcase className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+          <div className="w-full h-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center">
+             <Briefcase className="w-5 h-5 text-primary-600 dark:text-primary-400" />
           </div>
         )}
       </div>
       
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white">{job.role}</h3>
-        <span className="text-sm font-medium px-3 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 w-fit mt-2 sm:mt-0">
+        <span className="text-sm font-medium px-3 py-1 rounded-full bg-primary-100 text-primary-800 dark:bg-slate-700 dark:text-primary-300 w-fit mt-2 sm:mt-0">
           {job.start} - {job.end}
         </span>
       </div>
       
       <div className="flex items-center text-gray-600 dark:text-gray-400 mb-4 text-sm">
-        <span className="font-semibold mr-4 text-blue-600 dark:text-blue-400">{job.company}</span>
+        <span className="font-semibold mr-4 text-primary-600 dark:text-primary-400">{job.company}</span>
       </div>
 
       <ul className="list-disc list-outside ml-4 space-y-2 text-gray-700 dark:text-gray-300">
