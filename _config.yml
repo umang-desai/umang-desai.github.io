@@ -1,0 +1,7 @@
+exclude:
+  - legacy_site
+  - node_modules
+  - src
+  - public
+  - .github
+  - dist
