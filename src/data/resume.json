@@ -27,6 +27,7 @@
   "experience": [
     {
       "company": "Cisco",
+      "logo": "https://logo.clearbit.com/cisco.com",
       "role": "Senior Software Engineer",
       "start": "July 2023",
       "end": "Present",
@@ -42,6 +43,7 @@
     },
     {
       "company": "Armorblox",
+      "logo": "https://logo.clearbit.com/armorblox.com",
       "role": "Senior Software Engineer",
       "start": "May 2021",
       "end": "July 2023",
@@ -55,6 +57,7 @@
     },
     {
       "company": "Kazuhm, Inc.",
+      "logo": "https://logo.clearbit.com/kazuhm.com",
       "role": "Senior Software Engineer",
       "start": "Aug 2018",
       "end": "May 2021",
@@ -70,6 +73,7 @@
     },
     {
       "company": "George Mason Univ.",
+      "logo": "https://logo.clearbit.com/gmu.edu",
       "role": "Graduate Teaching Assistant (Software Engineering)",
       "start": "Aug 2017",
       "end": "May 2018",
@@ -82,6 +86,7 @@
     },
     {
       "company": "George Mason Univ.",
+      "logo": "https://logo.clearbit.com/gmu.edu",
       "role": "Graduate Teaching Assistant (OOP)",
       "start": "Jan 2017",
       "end": "May 2017",
@@ -105,6 +110,7 @@
     },
     {
       "company": "ESQ Business Services",
+      "logo": "https://logo.clearbit.com/esq.com",
       "role": "Software Engineer",
       "start": "Aug 2012",
       "end": "Dec 2014",
