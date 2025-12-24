@@ -41,16 +41,19 @@ const Header: React.FC = () => {
               Coaching
             </Link>
           </nav>
-          <div className="hidden sm:flex items-center space-x-4">
-            <a href={`mailto:${resumeData.personal.email}`} className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
-              <Mail className="w-5 h-5" />
-            </a>
-            <a href="https://github.com/umang-desai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
-              <Github className="w-5 h-5" />
-            </a>
-             <a href="https://linkedin.com/in/umang-desai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
-              <Linkedin className="w-5 h-5" />
-            </a>
+          <div className="flex items-center space-x-4">
+            <div className="hidden sm:flex items-center space-x-4">
+              <a href={`mailto:${resumeData.personal.email}`} className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+                <Mail className="w-5 h-5" />
+              </a>
+              <a href="https://github.com/umang-desai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+                <Github className="w-5 h-5" />
+              </a>
+              <a href="https://linkedin.com/in/umang-desai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
+            <ThemeToggle />
           </div>
         </div>
       </div>

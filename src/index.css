@@ -7,11 +7,9 @@
   --foreground: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #ffffff;
-  }
+.dark {
+  --background: #020617;
+  --foreground: #ffffff;
 }
 
 body {

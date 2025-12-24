@@ -143,11 +143,13 @@
     "apps": [
       {
         "name": "Soccer Fitness Tracker",
+        "logoBase": "soccer_fitness_tracker",
         "url": "https://apps.apple.com/us/app/soccer-fitness-tracker/id6756504677",
         "description": "Track your soccer fitness journey with advanced metrics and analytics."
       },
       {
         "name": "Tryout Assistant",
+        "logoBase": "tryout_assistant",
         "url": "https://apps.apple.com/us/app/tryout-assistant/id6756588745",
         "description": "Streamline the player evaluation process for coaches and scouts."
       }

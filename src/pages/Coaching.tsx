@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Trophy, Users } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import resumeData from '../data/resume.json';
 
 const Coaching: React.FC = () => {
@@ -32,8 +32,19 @@ const Coaching: React.FC = () => {
               <ExternalLink className="w-6 h-6 text-blue-500" />
             </div>
             
-            <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
-              {index === 0 ? <Trophy className="w-8 h-8" /> : <Users className="w-8 h-8" />}
+            <div className="mb-6 h-20 w-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 p-4 flex items-center justify-center">
+              {/* Light mode logo */}
+              <img 
+                src={`/logos/${(app as any).logoBase}_light.svg`}
+                alt={`${app.name} logo`}
+                className="w-full h-full object-contain dark:hidden"
+              />
+              {/* Dark mode logo */}
+              <img 
+                src={`/logos/${(app as any).logoBase}_dark.svg`}
+                alt={`${app.name} logo`}
+                className="w-full h-full object-contain hidden dark:block"
+              />
             </div>
 
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
