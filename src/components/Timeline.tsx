@@ -5,7 +5,7 @@ import resumeData from '../data/resume.json';
 
 const Timeline: React.FC = () => {
   return (
-    <div className="relative border-l-2 border-blue-200 dark:border-blue-900 ml-3 md:ml-6 space-y-12 my-10">
+    <div className="relative border-l-2 border-blue-200 dark:border-blue-900 ml-6 md:ml-10 space-y-12 my-10">
       {resumeData.experience.map((job, index) => (
         <TimelineItem key={index} job={job} index={index} />
       ))}
@@ -25,7 +25,7 @@ const TimelineItem: React.FC<{ job: any; index: number }> = ({ job, index }) => 
       className="relative pl-8 md:pl-12"
     >
       {/* Dot on the timeline - Replaced with Logo if available */}
-      <div className="absolute top-0 left-[-20px] md:left-[-24px] w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-white dark:border-slate-950 bg-white flex items-center justify-center overflow-hidden shadow-sm">
+      <div className="absolute top-0 left-[-24px] md:left-[-32px] w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-white dark:border-slate-950 bg-white flex items-center justify-center overflow-hidden shadow-sm">
         {job.logo && !imageError ? (
           <img 
             src={job.logo} 
