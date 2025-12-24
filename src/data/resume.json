@@ -1,0 +1,149 @@
+{
+  "personal": {
+    "name": "Umang Desai",
+    "title": "Senior Software Engineer",
+    "location": "San Diego, CA",
+    "email": "umangd03@gmail.com",
+    "phone": "(703) 980-3493",
+    "summary": "Senior Software Engineer with over 10 years of experience designing, developing, and deploying scalable, high-performance software solutions. Expertise in AI-driven systems, including natural language processing and large language model (LLM) integration. Skilled in building distributed systems and cloud-native architectures using Python, Golang, and modern DevOps tools. Hands on, versatile engineer with an eye for simplicity and elegance in the software I write."
+  },
+  "skills": {
+    "languages_and_systems": [
+      "Python", "Golang", "TypeScript", "Node JS", "Java", "C/C++", "SQL", "Regex", "Docker", "Kubernetes", "Jenkins", "Swarm"
+    ],
+    "frameworks_cloud": [
+      "AWS", "GCP", "Azure", "Prometheus", "Grafana", "Fluentd", "ElasticSearch", "RabbitMQ", "Kafka", "Apache Camel"
+    ],
+    "databases": [
+      "CockroachDB", "AuroraDB", "MySQL", "MongoDB", "MS-SQL", "SQLite"
+    ],
+    "devops_tools": [
+      "Git", "JIRA", "Agile", "VSCode", "Visual Studio", "Eclipse", "Netbeans", "TOMCAT", "Windows IIS"
+    ],
+    "specializations": [
+      "NLtoSQL", "Large Language Models (LLMs)", "Natural Language Understanding (NLU)", "Distributed Systems", "Performance Optimization", "Telemetry Services"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Cisco",
+      "role": "Senior Software Engineer",
+      "start": "July 2023",
+      "end": "Present",
+      "description": [
+        "Lead design and development of Cisco’s AI Assistant for FMC and CDFMC, building scalable services using Python, Golang, CockroachDB, and AuroraDB.",
+        "Develop NLtoSQL systems to translate natural language queries into precise SQL, enhancing user interaction and data retrieval accuracy.",
+        "Design processes to interpret user queries, mapping them to database datasets for efficient SQL query generation.",
+        "Integrate Large Language Models to deliver contextually accurate responses, collaborating with data science teams to optimize output quality.",
+        "Architect low-latency, high-availability backend services, achieving a 70% latency reduction through query optimization, caching, and indexing.",
+        "Implement strategies to enhance system scalability and response times for AI-driven services.",
+        "Collaborate effectively with DevOps, QA, and product management teams to ensure seamless feature integration and deployment."
+      ]
+    },
+    {
+      "company": "Armorblox",
+      "role": "Senior Software Engineer",
+      "start": "May 2021",
+      "end": "July 2023",
+      "description": [
+        "Designing and developing Armorblox Data Protection using Regex and NLU (Natural Language Understanding) in GoLang, C and/or Python.",
+        "Applying distributed system concepts like RabbitMQ, Kafka and Kubernetes in scaling the Armorblox Data Protection product to process large volumes of data in GCP and Azure cloud data centers.",
+        "Designing and implementing configuration and incident management using SQL data stores and gRPC.",
+        "Collaborating with cross functional teams like Product Management, Customer Support and Production Engineering for successful delivery of the product and best customer experience.",
+        "Improve the code quality by resolving software defects and adding unit and integration test cases."
+      ]
+    },
+    {
+      "company": "Kazuhm, Inc.",
+      "role": "Senior Software Engineer",
+      "start": "Aug 2018",
+      "end": "May 2021",
+      "description": [
+        "Maintained and re-engineered current Windows development stack (C++, Visual Studio, WIX).",
+        "Lead Migrating Windows stack to newer technologies to enable cross-platform compatibility and optimized architecture across Kazuhm platform. (GOLang)",
+        "Designed, developed and tested a distributed and scalable container deployment system (Docker) for distributed workloads using the Kazuhm platform.",
+        "Architected and configured platform-wide logging framework (Fluentd) along with ElasticSearch/S3 as storage and Grafana as UI.",
+        "Improved the Kazuhm build server to ensure a continuous build and deployment process (Jenkins) and improved its efficiency by 50%.",
+        "Designed, developed and tested telemetry service for Kazuhm Platform using Prometheus and Grafana as UI.",
+        "Implemented internal APIs and RESTful web services."
+      ]
+    },
+    {
+      "company": "George Mason Univ.",
+      "role": "Graduate Teaching Assistant (Software Engineering)",
+      "start": "Aug 2017",
+      "end": "May 2018",
+      "description": [
+        "Conducting lectures and presentations.",
+        "Grading deliverables for a full scale SDLC project, assignments, presentation peer evaluations.",
+        "Mentoring students on different stages of SDLC and conducting bi-weekly meetings for project review, enabling AGILE culture.",
+        "Introduced a culture of unit testing."
+      ]
+    },
+    {
+      "company": "George Mason Univ.",
+      "role": "Graduate Teaching Assistant (OOP)",
+      "start": "Jan 2017",
+      "end": "May 2017",
+      "description": [
+        "Mentoring undergraduates through office hours, teaching students of varying levels of understanding the concepts of Java Object Oriented Programming.",
+        "Conducting lectures and programming labs.",
+        "Grading assignments, labs, projects."
+      ]
+    },
+    {
+      "company": "Fondo",
+      "role": "Co-Founder",
+      "start": "Jan 2015",
+      "end": "Mar 2016",
+      "description": [
+        "Social event discovery application to correlate user and events geospatial data and indicate suitable local events for a user.",
+        "Designing and developing backend, databases and data-models.",
+        "Maintain, monitor and review development of the application and manage project deadlines.",
+        "Actively involved in software architecture and product development."
+      ]
+    },
+    {
+      "company": "ESQ Business Services",
+      "role": "Software Engineer",
+      "start": "Aug 2012",
+      "end": "Dec 2014",
+      "description": [
+        "Designed, developed and tested module to monitor JVM on a host by extracting telemetry data using JAVA, MSSQL and JMX. This was achieved via a 3 tier client-server-data backend architecture.",
+        "Designed and modeled a database for the data extracted. Then developed advanced filtering across multiple Mbeans for retrieving these metrics for bandwidth friendly data pipelines.",
+        "Configured frameworks like XStream for configuration files and models, log4j for logging.",
+        "Designed, developed and tested module to monitor Linux via the proc fs to analyze system performance and uptime. This was achieved with JAVA and MSSQL",
+        "Developed a parsing framework for system proc files with configurable polling mechanisms."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.S Computer Science",
+      "school": "George Mason University",
+      "years": "2016-2018",
+      "gpa": "3.4"
+    },
+    {
+      "degree": "B.S Information Science and Technology",
+      "school": "Pennsylvania State University",
+      "years": "2008-2012",
+      "gpa": "3.0"
+    }
+  ],
+  "coaching": {
+    "intro": "Passionate about combining technology with sports coaching.",
+    "apps": [
+      {
+        "name": "Soccer Fitness Tracker",
+        "url": "https://apps.apple.com/us/app/soccer-fitness-tracker/id6756504677",
+        "description": "Track your soccer fitness journey with advanced metrics and analytics."
+      },
+      {
+        "name": "Tryout Assistant",
+        "url": "https://apps.apple.com/us/app/tryout-assistant/id6756588745",
+        "description": "Streamline the player evaluation process for coaches and scouts."
+      }
+    ]
+  }
+}
