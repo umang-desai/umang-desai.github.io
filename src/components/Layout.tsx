@@ -37,23 +37,32 @@ const themes = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
+  const isCoaching = location.pathname === '/coaching';
 
   useEffect(() => {
     const root = document.documentElement;
-    const theme = location.pathname === '/coaching' ? themes.coaching : themes.default;
+    const theme = isCoaching ? themes.coaching : themes.default;
 
     Object.entries(theme).forEach(([shade, value]) => {
       root.style.setProperty(`--primary-${shade}`, value);
     });
-  }, [location.pathname]);
+  }, [location.pathname, isCoaching]);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-slate-950 transition-colors duration-300">
+    <div className={`min-h-screen transition-colors duration-300 ${
+      isCoaching 
+        ? 'bg-emerald-50/50 dark:bg-emerald-950' 
+        : 'bg-blue-50/50 dark:bg-slate-950'
+    }`}>
       <Header />
       <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         {children}
       </main>
-      <footer className="bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 mt-auto">
+      <footer className={`border-t mt-auto ${
+        isCoaching
+          ? 'bg-emerald-50/80 dark:bg-emerald-900/50 border-emerald-200 dark:border-emerald-800'
+          : 'bg-blue-50/80 dark:bg-slate-900 border-blue-200 dark:border-slate-800'
+      }`}>
         <div className="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex justify-center text-gray-400 dark:text-gray-500 text-sm">
           &copy; {new Date().getFullYear()} {import.meta.env.VITE_APP_TITLE || 'Umang Desai'}. All rights reserved.
         </div>

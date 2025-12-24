@@ -26,7 +26,7 @@ const Coaching: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            className="group relative bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-slate-800 transition-all duration-300"
+            className="group relative bg-white dark:bg-emerald-900/30 rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-emerald-800/50 transition-all duration-300"
           >
             <a 
               href={app.url}
@@ -77,7 +77,7 @@ const Coaching: React.FC = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="bg-primary-50 dark:bg-slate-800/50 rounded-2xl p-8 md:p-12 text-center mt-12 border border-primary-100 dark:border-slate-700"
+        className="bg-primary-50 dark:bg-emerald-900/40 rounded-2xl p-8 md:p-12 text-center mt-12 border border-primary-100 dark:border-emerald-700"
       >
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
           Interested in training?
