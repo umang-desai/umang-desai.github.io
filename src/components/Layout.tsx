@@ -51,7 +51,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
       isCoaching 
-        ? 'bg-emerald-50/50 dark:bg-emerald-950' 
+        ? 'bg-emerald-50/30 dark:bg-emerald-950' 
         : 'bg-blue-50/50 dark:bg-slate-950'
     }`}>
       <Header />
@@ -60,7 +60,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </main>
       <footer className={`border-t mt-auto ${
         isCoaching
-          ? 'bg-emerald-50/80 dark:bg-emerald-900/50 border-emerald-200 dark:border-emerald-800'
+          ? 'bg-emerald-50/60 dark:bg-emerald-900/50 border-emerald-200/70 dark:border-emerald-800'
           : 'bg-blue-50/80 dark:bg-slate-900 border-blue-200 dark:border-slate-800'
       }`}>
         <div className="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex justify-center text-gray-400 dark:text-gray-500 text-sm">
