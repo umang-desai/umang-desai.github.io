@@ -55,7 +55,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         : 'bg-blue-50/50 dark:bg-slate-950'
     }`}>
       <Header />
-      <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <main className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         {children}
       </main>
       <footer className={`border-t mt-auto ${
