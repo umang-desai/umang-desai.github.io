@@ -12,11 +12,25 @@ type ExperienceItem = {
   description: string[];
 };
 
+const formatDescription = (text: string): React.ReactNode => {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={index} className="font-semibold text-gray-900 dark:text-white">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+};
+
 const Timeline: React.FC = () => {
   return (
     <div className="relative border-l-2 border-primary-200 dark:border-primary-900 ml-4 sm:ml-6 md:ml-10 space-y-8 sm:space-y-12 my-6 sm:my-10">
       {(resumeData.experience as ExperienceItem[]).map((job, index) => (
-        <TimelineItem key={index} job={job} index={index} />
+        <TimelineItem key={`${job.company}-${index}`} job={job} index={index} />
       ))}
     </div>
   );
@@ -49,9 +63,9 @@ const TimelineItem: React.FC<{ job: ExperienceItem; index: number }> = ({ job, i
         )}
       </div>
       
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1 sm:mb-2">
         <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">{job.role}</h3>
-        <span className="text-xs sm:text-sm font-medium px-2.5 sm:px-3 py-1 rounded-full bg-primary-100 text-primary-800 dark:bg-slate-700 dark:text-primary-300 w-fit mt-2 sm:mt-0">
+        <span className="text-xs sm:text-sm font-medium px-2.5 sm:px-3 py-1 rounded-full bg-primary-100 text-primary-800 dark:bg-slate-800 dark:text-primary-300 w-fit mt-1.5 sm:mt-0">
           {job.start} - {job.end}
         </span>
       </div>
@@ -62,11 +76,13 @@ const TimelineItem: React.FC<{ job: ExperienceItem; index: number }> = ({ job, i
 
       <ul className="list-disc list-outside ml-4 space-y-1.5 sm:space-y-2 text-gray-700 dark:text-gray-300">
         {job.description.map((desc: string, i: number) => (
-          <li key={i} className="pl-1 leading-relaxed">{desc}</li>
+          <li key={i} className="pl-1 leading-relaxed text-sm sm:text-base">
+            {formatDescription(desc)}
+          </li>
         ))}
       </ul>
     </motion.div>
   );
-}
+};
 
 export default Timeline;

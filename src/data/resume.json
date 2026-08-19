@@ -5,23 +5,23 @@
     "location": "San Diego, CA",
     "email": "umangd03@gmail.com",
     "phone": "(703) 980-3493",
-    "summary": "Senior Software Engineer with over 10 years of experience designing, developing, and deploying scalable, high-performance software solutions. Expertise in AI-driven systems, including natural language processing and large language model (LLM) integration. Skilled in building distributed systems and cloud-native architectures using Python, Golang, and modern DevOps tools. Hands on, versatile engineer with an eye for simplicity and elegance in the software I write."
+    "summary": "Senior Software Engineer with over 12 years of experience designing, developing, and deploying scalable, AI-driven systems. Currently building agentic AI services powered by LLMs, Claude SDK, and Model Context Protocol (MCP) — with expertise in autonomous planning, tool orchestration, and human-in-the-loop workflows. Deep background in distributed systems, cloud-native architectures, and production observability using Python, Golang, and OpenTelemetry. Hands-on, versatile engineer with an eye for simplicity and elegance."
   },
   "skills": {
     "languages_and_systems": [
-      "Python", "Golang", "TypeScript", "Node JS", "Java", "C/C++", "SQL", "Regex", "Docker", "Kubernetes", "Jenkins", "Swarm"
+      "Python", "Golang", "TypeScript", "Java", "C/C++", "SQL", "Docker", "Kubernetes", "Redis", "gRPC"
     ],
     "frameworks_cloud": [
-      "AWS", "GCP", "Azure", "Prometheus", "Grafana", "Fluentd", "ElasticSearch", "RabbitMQ", "Kafka", "Apache Camel"
+      "AWS", "GCP", "Azure", "Claude SDK", "Model Context Protocol (MCP)", "OpenTelemetry", "Prometheus", "Grafana", "RabbitMQ", "Kafka"
     ],
     "databases": [
-      "CockroachDB", "AuroraDB", "MySQL", "MongoDB", "MS-SQL", "SQLite"
+      "CockroachDB", "AuroraDB", "MySQL", "MongoDB", "SQLite", "Redis"
     ],
     "devops_tools": [
-      "Git", "JIRA", "Agile", "VSCode", "Visual Studio", "Eclipse", "Netbeans", "TOMCAT", "Windows IIS"
+      "Git", "Jenkins", "CI/CD", "CodeQL", "Docker Security Hardening", "Sandboxed Code Execution", "JIRA", "Agile"
     ],
     "specializations": [
-      "NLtoSQL", "Large Language Models (LLMs)", "Natural Language Understanding (NLU)", "Distributed Systems", "Performance Optimization", "Telemetry Services"
+      "Agentic AI Systems", "Claude SDK & MCP", "NLtoSQL", "Large Language Models (LLMs)", "OpenTelemetry Observability", "Distributed Systems", "Performance Optimization"
     ]
   },
   "experience": [
@@ -32,13 +32,13 @@
       "start": "July 2023",
       "end": "Present",
       "description": [
-        "Lead design and development of Cisco’s AI Assistant for FMC and CDFMC, building scalable services using Python, Golang, CockroachDB, and AuroraDB.",
-        "Develop NLtoSQL systems to translate natural language queries into precise SQL, enhancing user interaction and data retrieval accuracy.",
-        "Design processes to interpret user queries, mapping them to database datasets for efficient SQL query generation.",
-        "Integrate Large Language Models to deliver contextually accurate responses, collaborating with data science teams to optimize output quality.",
-        "Architect low-latency, high-availability backend services, achieving a 70% latency reduction through query optimization, caching, and indexing.",
-        "Implement strategies to enhance system scalability and response times for AI-driven services.",
-        "Collaborate effectively with DevOps, QA, and product management teams to ensure seamless feature integration and deployment."
+        "Lead design and development of **Canvas Deep Agent**, Cisco's agentic AI service on the AI Studio platform — building an autonomous LLM-powered agent using **Python**, **Claude SDK**, and **Model Context Protocol (MCP)** that plans, reasons, and executes multi-step tasks with human-in-the-loop approval gates.",
+        "Pioneer **AI-driven development** practices across the engineering team, leveraging LLM-powered tooling to accelerate feature development, debugging, and architectural decision-making — maintaining structured audit trails with engineering decision records and traceable design-to-deployment workflows.",
+        "Architect distributed systems infrastructure for multi-pod **Kubernetes** deployments, implementing **Redis pub/sub** for cross-pod communication, plan approval gating mechanisms, and resilient session management that gracefully degrades under failure.",
+        "Build end-to-end **OpenTelemetry** observability for the agent lifecycle — instrumenting planning loops, tool execution chains, and LLM token utilization with granular spans and durable log export, providing full audit trails of every agent action for production debugging and performance optimization.",
+        "Drive security hardening initiatives including **Docker image hardening**, **CodeQL remediation**, sandboxed code execution with network isolation, and architectural SQL injection mitigation.",
+        "Develop Cisco's **AI Assistant for FMC and CDFMC** with **NLtoSQL** capabilities, translating natural language queries into precise SQL for firewall management, achieving a **70% latency reduction** through query optimization, caching, and indexing.",
+        "Refactor ML prototypes into production-ready backend microservices using **Python**, **Golang**, **CockroachDB**, and **AuroraDB**, with feature flags, resiliency patterns, and comprehensive error management for enterprise-grade deployment."
       ]
     },
     {
@@ -48,11 +48,11 @@
       "start": "May 2021",
       "end": "July 2023",
       "description": [
-        "Designing and developing Armorblox Data Protection using Regex and NLU (Natural Language Understanding) in GoLang, C and/or Python.",
-        "Applying distributed system concepts like RabbitMQ, Kafka and Kubernetes in scaling the Armorblox Data Protection product to process large volumes of data in GCP and Azure cloud data centers.",
-        "Designing and implementing configuration and incident management using SQL data stores and gRPC.",
-        "Collaborating with cross functional teams like Product Management, Customer Support and Production Engineering for successful delivery of the product and best customer experience.",
-        "Improve the code quality by resolving software defects and adding unit and integration test cases."
+        "Designed and developed **Armorblox Data Protection** using Regex and **NLU (Natural Language Understanding)** in **Golang**, **C**, and **Python**.",
+        "Applied distributed system concepts including **RabbitMQ**, **Kafka**, and **Kubernetes** to scale the Data Protection product for high-throughput processing across **GCP** and **Azure** cloud data centers.",
+        "Designed and implemented configuration and incident management microservices using SQL data stores and **gRPC**.",
+        "Collaborated with cross-functional teams across Product Management, Customer Support, and Production Engineering for high-reliability enterprise delivery.",
+        "Improved code quality and reliability by adding comprehensive unit and integration test suites."
       ]
     },
     {
@@ -62,13 +62,12 @@
       "start": "Aug 2018",
       "end": "May 2021",
       "description": [
-        "Maintained and re-engineered current Windows development stack (C++, Visual Studio, WIX).",
-        "Lead Migrating Windows stack to newer technologies to enable cross-platform compatibility and optimized architecture across Kazuhm platform. (GOLang)",
-        "Designed, developed and tested a distributed and scalable container deployment system (Docker) for distributed workloads using the Kazuhm platform.",
-        "Architected and configured platform-wide logging framework (Fluentd) along with ElasticSearch/S3 as storage and Grafana as UI.",
-        "Improved the Kazuhm build server to ensure a continuous build and deployment process (Jenkins) and improved its efficiency by 50%.",
-        "Designed, developed and tested telemetry service for Kazuhm Platform using Prometheus and Grafana as UI.",
-        "Implemented internal APIs and RESTful web services."
+        "Maintained and re-engineered Windows development stack (**C++**, Visual Studio, WIX).",
+        "Led migration of Windows stack to modern cross-platform architecture in **Golang**.",
+        "Designed, developed, and tested a distributed, scalable container deployment system (**Docker**) for distributed workloads.",
+        "Architected platform-wide logging framework (**Fluentd**) with **ElasticSearch/S3** storage and **Grafana** visualization.",
+        "Modernized CI/CD build pipelines (**Jenkins**), improving build efficiency by **50%**.",
+        "Designed and developed telemetry services using **Prometheus** and **Grafana**."
       ]
     },
     {
@@ -138,6 +137,18 @@
       "gpa": "3.0"
     }
   ],
+  "volunteer": [
+    {
+      "role": "Soccer Head Coach",
+      "organization": "Pacific Youth Soccer League (PYSL Blast)",
+      "years": "2026 - Present"
+    },
+    {
+      "role": "Soccer Head Coach",
+      "organization": "SDSC Surf",
+      "years": "2020 - 2024"
+    }
+  ],
   "coaching": {
     "intro": "Passionate about combining technology with sports coaching.",
     "apps": [
@@ -152,6 +163,12 @@
         "logoBase": "tryout_assistant",
         "url": "https://apps.apple.com/us/app/tryout-assistant/id6756588745",
         "description": "Streamline the player evaluation process for coaches and scouts."
+      },
+      {
+        "name": "Touchline Studio",
+        "logoBase": "touchline_studio",
+        "url": "https://apps.apple.com/us/app/touchline-studio/id6757970508",
+        "description": "Plan training sessions, design drills, and manage team preparation with development trees and lineup management."
       }
     ]
   }

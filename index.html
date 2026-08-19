@@ -2,10 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Umang Desai - Portfolio</title>
-    <meta name="description" content="Senior Software Engineer specializing in AI, Distributed Systems, and Full Stack Development." />
+    
+    <title>Umang Desai | Senior Software Engineer</title>
+    <meta name="description" content="Senior Software Engineer with 12+ years of experience building Agentic AI, Distributed Systems, and Cloud-Native Platforms using Python, Golang, Claude SDK, and MCP." />
+    <meta name="author" content="Umang Desai" />
+    <link rel="canonical" href="https://umangdesai.com/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://umangdesai.com/" />
+    <meta property="og:title" content="Umang Desai | Senior Software Engineer" />
+    <meta property="og:description" content="Senior Software Engineer specializing in Agentic AI, Distributed Systems, Claude SDK, Model Context Protocol (MCP), and OpenTelemetry." />
+    <meta property="og:site_name" content="Umang Desai Portfolio" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Umang Desai | Senior Software Engineer" />
+    <meta name="twitter:description" content="Senior Software Engineer specializing in Agentic AI, Distributed Systems, Claude SDK, Model Context Protocol (MCP), and OpenTelemetry." />
+
+    <!-- Theme Initialization Script to prevent FOUC (Dark Mode Flash) -->
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (theme === 'dark' || (!theme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Umang Desai",
+        "jobTitle": "Senior Software Engineer",
+        "url": "https://umangdesai.com",
+        "email": "umangd03@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Diego",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://github.com/umang-desai",
+          "https://linkedin.com/in/umang-desai"
+        ],
+        "knowsAbout": [
+          "Agentic AI",
+          "Model Context Protocol (MCP)",
+          "Claude SDK",
+          "Distributed Systems",
+          "Python",
+          "Golang",
+          "Kubernetes",
+          "OpenTelemetry"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

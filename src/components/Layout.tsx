@@ -46,25 +46,45 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     Object.entries(theme).forEach(([shade, value]) => {
       root.style.setProperty(`--primary-${shade}`, value);
     });
+
+    // Update dynamic document title
+    if (isCoaching) {
+      document.title = 'Coaching & Fitness Apps | Umang Desai';
+    } else {
+      document.title = 'Umang Desai | Senior Software Engineer';
+    }
   }, [location.pathname, isCoaching]);
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${
+    <div className={`min-h-screen flex flex-col transition-colors duration-300 ${
       isCoaching 
         ? 'bg-emerald-50/30 dark:bg-emerald-950' 
         : 'bg-blue-50/50 dark:bg-slate-950'
     }`}>
       <Header />
-      <main className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <main className="flex-grow pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
         {children}
       </main>
-      <footer className={`border-t mt-auto ${
+      <footer className={`border-t transition-colors duration-300 ${
         isCoaching
-          ? 'bg-emerald-50/60 dark:bg-emerald-900/50 border-emerald-200/70 dark:border-emerald-800'
-          : 'bg-blue-50/80 dark:bg-slate-900 border-blue-200 dark:border-slate-800'
+          ? 'bg-emerald-50/60 dark:bg-emerald-950/60 border-emerald-200/70 dark:border-emerald-800/50'
+          : 'bg-blue-50/80 dark:bg-slate-950/80 border-blue-200 dark:border-slate-800'
       }`}>
-        <div className="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex justify-center text-gray-400 dark:text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} {import.meta.env.VITE_APP_TITLE || 'Umang Desai'}. All rights reserved.
+        <div className="max-w-5xl mx-auto py-6 sm:py-8 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+          <div>
+            &copy; {new Date().getFullYear()} Umang Desai. All rights reserved.
+          </div>
+          <div className="flex items-center space-x-6">
+            <a href="https://github.com/umang-desai" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/umang-desai" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              LinkedIn
+            </a>
+            <a href="mailto:umangd03@gmail.com" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              Email
+            </a>
+          </div>
         </div>
       </footer>
     </div>
